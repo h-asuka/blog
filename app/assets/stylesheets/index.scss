@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.main-container {
+  background-color: blue;
+  height: calc(100vh - 80px);
+  padding: 50px;
+  display: flex;
+  .slick-content {
+    width: 60%;
+    .article-rank {
+      height: 45%;
+      background-color: white;
+    }
+    .article-new {
+      height: 45%;
+      background-color: cyan;
+      margin-top: 65px;
+    }
+  }
+  .right-content {
+    margin-left: 80px;
+    width: 30%;
+    overflow: scroll;
+    height: 100%;
+    .right-content__signed-in {
+      height: 100%;
+      background-color: orange;
+      padding: 10px;
+      // text-overflow: ellipsis;
+      // white-space: nowrap;
+      // overflow: hidden;
+      .mypage {
+        text-align: center;
+      }
+      .postlist {
+        display: flex;
+        border-bottom: 1px solid #f6f6f6;
+        
+        .side-image {
+          height: 40px;
+          width: 40px;
+          border: solid 1px;
+          background-color: papayawhip;
+          margin: 5px;
+        }
+        .mypost {
+          height: 100%;
+          margin-left: 20px;
+          width: 40%;
+          &--title {
+            height: 100%;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 40px;
+            text-decoration: none;
+            color:yellow;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+        .nickname {
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .right-content__signed-out {
+      height: 100%;
+      .register-content {
+        height: 30%;
+        background-color: orange;
+        .new-register {
+
+        }
+        .log-in {
+  
+        }
+      }
+      .advertising {
+        margin-top: 65px;
+        height: 60%;
+        background-color: darkorchid;
+      }
+    }
+  }
+}
